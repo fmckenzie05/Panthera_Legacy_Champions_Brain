@@ -1,0 +1,128 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "Rel - Intellusia",
+      "color": {
+        "a": 1,
+        "rgb": 15860226
+      }
+    },
+    {
+      "query": "Anomalie Grid.md",
+      "color": {
+        "a": 1,
+        "rgb": 15860226
+      }
+    },
+    {
+      "query": "Rel - Intellusia",
+      "color": {
+        "a": 1,
+        "rgb": 267515
+      }
+    },
+    {
+      "query": "Azure Terraform Work.md",
+      "color": {
+        "a": 1,
+        "rgb": 267515
+      }
+    },
+    {
+      "query": "Rel - Intellusia",
+      "color": {
+        "a": 1,
+        "rgb": 58884
+      }
+    },
+    {
+      "query": "Government Contracting Pipeline.md",
+      "color": {
+        "a": 1,
+        "rgb": 58884
+      }
+    },
+    {
+      "query": " rel-market",
+      "color": {
+        "a": 1,
+        "rgb": 58884
+      }
+    },
+    {
+      "query": " Rel - Intellusia",
+      "color": {
+        "a": 1,
+        "rgb": 14508302
+      }
+    },
+    {
+      "query": "OpenClaw.md",
+      "color": {
+        "a": 1,
+        "rgb": 14508302
+      }
+    },
+    {
+      "query": "rel-operations",
+      "color": {
+        "a": 1,
+        "rgb": 14508302
+      }
+    },
+    {
+      "query": "Rel - Intellusia",
+      "color": {
+        "a": 1,
+        "rgb": 7865835
+      }
+    },
+    {
+      "query": "Project Babel.md",
+      "color": {
+        "a": 1,
+        "rgb": 7865835
+      }
+    },
+    {
+      "query": "rel-capability",
+      "color": {
+        "a": 1,
+        "rgb": 7865835
+      }
+    },
+    {
+      "query": "rel-infrastructure",
+      "color": {
+        "a": 1,
+        "rgb": 267515
+      }
+    },
+    {
+      "query": "MEMORY",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -1.1,
+  "nodeSizeMultiplier": 0.878385416666667,
+  "lineSizeMultiplier": 1.13359375,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 0.330729166666667,
+  "linkDistance": 220,
+  "scale": 0.5359795996225929,
+  "close": true
+}
