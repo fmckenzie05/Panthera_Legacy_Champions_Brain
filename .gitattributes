@@ -1,0 +1,18 @@
+# Normalize all text files to LF in the repo
+* text=auto eol=lf
+
+# Explicitly mark binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.mp4 binary
+*.svg binary
+*.ico binary
+*.gif binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+
+# JS plugin files (treat as binary to avoid corruption)
+.obsidian/plugins/**/main.js binary
