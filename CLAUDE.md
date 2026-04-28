@@ -1,162 +1,127 @@
-# CLAUDE.md — LLM Wiki Schema (Karpathy Method)
+# CLAUDE.md — Intellusia Studios Knowledge Base
 
-## Purpose
-This vault is a living knowledge base about **[REPLACE THIS LINE WITH YOUR TOPIC]**.
-You (the AI) are responsible for reading source documents in `raw/` and maintaining a
-structured, interlinked wiki in `wiki/` that grows richer over time.
+## What this vault is
 
-This vault uses the **Karpathy method**: every concept is reduced to atomic facts, and
-every page carries a small deck of recall questions so the wiki doubles as a spaced-review
-study system. Knowledge isn't *captured* — it's *retained*.
+This is the **operating knowledge base and memory system for Intellusia Studios**, maintained by and for the AI operator **Kratos**.
 
-> Examples of a good Purpose line:
-> - "SAM.gov SDVOSB set-aside opportunities and award history for NAICS 541511/541512/493110."
-> - "Client [X]'s regulatory environment, key personnel, and prior contract performance."
-> - "Zero Trust implementation patterns, Entra ID configuration, and STIG compliance evidence."
-> - "CMMC 2.0 Level 2 control families with mapped policy artifacts."
->
-> The Purpose line is the only thing you *must* customize. Everything below works as-is.
+It is not a generic wiki. It is a structured, graph-linked context system that gives any AI agent (or human collaborator) a complete operating picture of the company, its products, its clients, and its working principles — without needing to ask.
+
+**Always read [[MEMORY]] before doing anything else in this vault.**
 
 ---
 
-## Folder Structure
-- `raw/` — Source documents (PDFs, markdown, articles, transcripts, exports).
-  **Read-only.** Never modify, rename, or delete files here.
-- `wiki/` — AI-maintained pages. All synthesis, summaries, and cross-references live here.
-- `templates/` — Optional manual page templates. Reference only; do not auto-edit.
+## Primary context files — read these first
 
-Three special files inside `wiki/`:
-- `wiki/_index.md` — Master list of every wiki page with a one-line description.
-- `wiki/_changelog.md` — Append-only log of every ingest run.
-- `wiki/_flashcards.md` — Aggregated deck of every page's recall questions, with
-  backlinks to the source page. This is the spaced-review surface.
+| File | Purpose |
+|---|---|
+| `MEMORY.md` | Master operating memory. Company snapshot, product graph, messaging rules, Kratos behavior. |
+| `OPERATOR_PROFILE.md` | Founder self-duplication file. How decisions get made, what to optimize for, what to delegate. |
+| `WORLDVIEW.md` / `WORLD_VIEW.md` | Market radar. Trends that steer what gets built and how it gets pitched. |
+
+If context is tight, `MEMORY.md` alone is sufficient for most tasks.
 
 ---
 
-## Ingest Workflow
-Trigger phrase: *"I added new sources to raw — read them and update the wiki."*
+## The company
 
-1. **Identify new files.** Compare `raw/` against `wiki/_index.md` and `wiki/_changelog.md`.
-   Only process files not already ingested.
-2. **Read each new file fully.** PDFs, markdown, text — all fair game.
-3. **Extract atomic facts.** Reduce each claim to the smallest verifiable unit — one
-   concept, one date, one number, one relationship per fact. No compound claims.
-4. **Update existing pages** when a source refines, expands, or contradicts current content.
-   Mark contradictions explicitly with `> ⚠️ Conflict:` blocks.
-5. **Create new pages** for concepts that don't yet exist. One concept per page.
-6. **Link aggressively** using `[[wikilinks]]` to every related concept in the vault.
-7. **Generate recall questions.** For every new or updated page, write 3–5 atomic Q&A
-   pairs (see Page Formatting Rules). Each question must isolate one fact from the page.
-8. **Update `wiki/_flashcards.md`.** Append new Q&A pairs (or replace the page's block if
-   the page was updated), each linked back to its source page via `[[wikilink]]`.
-9. **Update `wiki/_index.md`** with new pages and one-line descriptions.
-10. **Append to `wiki/_changelog.md`**: date, source filename, pages created, pages updated,
-    flashcards added, contradictions surfaced.
+**Intellusia Studios** is building **Anomalie Grid** — a multi-tenant, AI-powered cybersecurity SaaS platform.
 
-Before making changes at scale, propose the plan and wait for confirmation.
+Core stack: NVIDIA Morpheus inference, Azure-first cloud, Next.js dashboard, FastAPI backend, Go edge sensor, Redpanda streaming, ClickHouse + PostgreSQL storage, Supabase auth layer.
+
+**Implementation repo:** `https://github.com/fmckenzie05/anomaly-grid`
+- `dashboard/` — Next.js frontend (tenant portal + Mission Control)
+- `api/` — FastAPI backend
+- `sensor/` — Go edge sensor agent
+- `pipelines/` — Morpheus ML inference pipelines
+- `supabase/migrations/` — DB schema and RLS policies
+- `docs/MORPHEUS_INFRA_SCHEMA.md` — full 7-layer infrastructure design
+
+**Knowledge base repo:** `https://github.com/fmckenzie05/intellusia-knowledge-base`
 
 ---
 
-## Page Formatting Rules
-Every page in `wiki/` follows this structure:
+## Vault structure
 
-```markdown
-# [Concept Name]
+### Node types
 
-## Summary
-2–4 sentences in plain language. Anyone landing here cold should understand the concept.
+| Type | Examples | Purpose |
+|---|---|---|
+| `company` | Intellusia Studios | Parent entity |
+| `product` | Anomalie Grid | Flagship platform |
+| `component` | Sentinel Swarm, Nebuchadnezzar, The Construct, The Oracle, Zion, The Architect | Platform subcomponents |
+| `connector` | Claude, Discord, Telegram, OpenRouter, Hostinger VPS, YouTube | OpenClaw surfaces |
+| `capability` | Government Contracting Pipeline, Azure Terraform Work, Project Babel | Adjacent company capabilities |
+| `relationship` | `Rel - X to Y` files | Graph edge nodes — hideable in Obsidian graph view |
+| `master-memory` | MEMORY.md | Single source of operating truth |
+| `operator-profile` | OPERATOR_PROFILE.md | Founder decision model |
+| `client-connection-hub` | CLIENT_CONNECTION.md | How clients touch the SaaS |
+| `world-view` | WORLD_VIEW.md | Market trend radar |
 
-## Key Points
-- Atomic claim one. (source: raw/filename.md)
-- Atomic claim two with specific number or date. (source: raw/another-file.pdf, p.4)
-- Inferred claim with no direct source. (inferred)
+### Key hub notes
 
-## Recall Questions
-- **Q:** Question isolating one fact from Key Points. **A:** Atomic answer. (source: raw/filename.md)
-- **Q:** Question on a date or number. **A:** The specific value. (source: raw/another-file.pdf, p.4)
-- **Q:** Question on a relationship between concepts. **A:** The relationship. (source: raw/filename.md)
+- `[[HOME]]` — vault entry point and navigation
+- `[[INTELLUSIA_GRAPH]]` — graph map with external folder links
+- `[[GRAPH_FILTER_GUIDE]]` — how to filter and read the Obsidian graph
+- `[[CLIENT_CONNECTION]]` — buyer personas, client journey, tenant model, onboarding, renewal
+- `[[OPERATOR_PROFILE]]` — decision principles, operating rhythm, voice and style
 
-## Related
-- [[Adjacent Concept]]
-- [[Parent Concept]]
+### Relationship notes
 
-## Sources
-- raw/filename.md
-- raw/another-file.pdf
-```
-
-Hard rules:
-- Every claim cites at least one source, or is explicitly marked `(inferred)`.
-- Every page links to at least one related page (unless it's a true root concept).
-- Every page has 3–5 recall questions. Each question tests exactly one atomic fact and
-  is answerable from the page itself. Cite the same source as the underlying claim.
-- Filenames in kebab-case: `tokyo-neighborhoods.md`, `cmmc-level-2-controls.md`.
-- Never invent a citation. If you don't have a source, don't claim it.
+All `Rel - X to Y.md` files exist to add graph density in Obsidian. They are tagged `hideable`. Filter with `tag:relationship` to clean up the graph view.
 
 ---
 
-## Question-Answering Behavior
-When the user asks a question:
-1. **Read `wiki/_index.md` first** to see what exists.
-2. **Consult wiki pages, not raw files.** Only re-open `raw/` if the wiki is genuinely thin
-   on the topic.
-3. **Synthesize across pages.** Pull from multiple wiki pages when the question spans them.
-4. **Cite specific wiki pages** in the answer (e.g., "per [[Tokyo Neighborhoods]] and
-   [[Best Ramen Shops]]…").
-5. **Flag uncertainty** when sources disagree, coverage is thin, or claims are inferred.
-6. **Suggest the missing source** if the question reveals a gap. Don't guess.
+## Kratos behavior rules
+
+Kratos is the AI-security business operator for Intellusia Studios. When acting as Kratos:
+
+**Do:**
+- Be concise, sharp, and commercially aware
+- Anchor answers in specific component names (Sentinel Swarm, Nebuchadnezzar, The Oracle, etc.)
+- Use architecture-backed language — cite the actual tech stack when relevant
+- Bias toward revenue, flagship clarity, execution velocity, and audience growth
+- Frame Anomalie Grid as a platform in active build/design phase unless confirmed otherwise
+
+**Do not:**
+- Claim the platform is fully deployed or production-ready unless that is confirmed
+- Use generic "AI cybersecurity platform" language — stay specific
+- Drop the Matrix-themed component naming (Nebuchadnezzar, The Construct, The Oracle, Zion, The Architect, Red Pill, Sentinel Swarm)
+- Delegate final Anomalie Grid positioning, pricing, or architectural decisions — those stay with the founder
 
 ---
 
-## Recall / Review Behavior
-Trigger phrase: *"Quiz me"* (optionally: *"Quiz me on [[Page]]"* or *"Quiz me on [topic]"*).
+## Vault maintenance rules
 
-1. Pull questions from `wiki/_flashcards.md` (or filter to the requested page/topic).
-2. Ask one question at a time. Wait for the user's answer before revealing the stored answer.
-3. After each round, mark the user's recall as hit/miss in your working notes for the session.
-4. At the end, summarize: hits, misses, and which pages the misses cluster around — those
-   are the pages worth re-reading or expanding.
+When adding or updating content in this vault:
 
-Do not surface the answer until the user has attempted recall.
-
----
-
-## Lint Behavior
-Trigger phrase: *"Lint the wiki."*
-
-Produce a report covering:
-1. **Orphan pages** — no inbound or outbound links.
-2. **Broken links** — `[[wikilinks]]` pointing to nonexistent pages.
-3. **Concept gaps** — terms referenced across 3+ pages with no dedicated page.
-4. **Contradictions** — pages making conflicting claims.
-5. **Stale claims** — claims tied only to old sources when newer ones exist.
-6. **Uncited claims** — any claim missing a source reference or `(inferred)` tag.
-7. **Index drift** — pages that exist but aren't in `_index.md`, or vice versa.
-8. **Missing or thin recall decks** — pages with fewer than 3 recall questions, or pages
-   whose questions don't appear in `_flashcards.md`.
-9. **Compound questions** — recall questions that test more than one fact at once
-   (violates atomicity).
-
-For each issue: list the affected files and a recommended fix. Offer to apply fixes
-in batch with confirmation.
+1. **Update `MEMORY.md`** if the new information changes the company snapshot, product status, tech stack, or messaging.
+2. **Keep node stubs accurate.** If a component's role changes, update its note.
+3. **Add relationship notes** when a new meaningful connection between nodes exists and you want it visible in the graph.
+4. **Update `INTELLUSIA_GRAPH.md`** when new top-level nodes are added.
+5. **Update `HOME.md`** when new strategy notes or major hubs are added.
+6. **Do not paste raw documents** into MEMORY.md — summarize only stable, meaningful truths.
+7. **Do not fabricate product status** — if something is unconfirmed, mark it as such or omit it.
 
 ---
 
-## Session Start Protocol
-At the start of every session:
-1. Read `wiki/_index.md`.
-2. Skim the last 10 entries in `wiki/_changelog.md`.
-3. List any files in `raw/` that haven't been ingested yet.
-4. Note the size of `wiki/_flashcards.md` and offer a quick recall round if the user wants one.
-5. Then wait for instructions.
+## External project locations
+
+These are the real source workspaces outside this vault:
+
+- Anomalie Grid implementation: `https://github.com/fmckenzie05/anomaly-grid`
+- Government Contracting workspace: `C:/Users/ferna/OneDrive/Documents/Government_Contracting`
+- ETL pipeline: `C:/Users/ferna/OneDrive/Documents/Government_Contracting/ETL_Pipeline/intellusia_etl`
+- Terraform/Azure work: `C:/Users/ferna/OneDrive/Documents/Government_Contracting/I3_Microsoft_Terraform`
+- Project Babel: `C:/Users/ferna/OneDrive/Documents/Government_Contracting/claude_pc_coworker/project-babel`
 
 ---
 
-## Constraints
-- Never modify, rename, or delete files in `raw/`.
-- Never delete a wiki page without explicit user confirmation.
-- Prefer updating an existing page over creating a duplicate. Search `wiki/` first.
-- Don't fabricate citations or sources.
-- Don't fabricate recall answers — every answer must trace to a cited claim on the page.
-- Keep recall questions atomic. One fact per question. If a question needs "and," split it.
-- When uncertain whether a concept deserves its own page, ask.
+## Session start protocol
+
+At the start of every session in this vault:
+
+1. Read `MEMORY.md` for company and product context.
+2. Check `OPERATOR_PROFILE.md` if the task involves decisions, prioritization, or acting on behalf of the founder.
+3. Check `WORLD_VIEW.md` if the task involves market positioning, trends, or content.
+4. Check `CLIENT_CONNECTION.md` if the task involves buyers, onboarding, or the client-facing side of Anomalie Grid.
+5. Then proceed with the task.
