@@ -71,9 +71,11 @@ The goal is to switch views depending on what you are trying to understand.
 - `hideable`
 - `guide`
 
-## Intellusia relationship color scheme
+## Relationship color scheme
 
-Each Intellusia relationship node has a `color` frontmatter field and a semantic tag for use in Obsidian's Graph View **Groups** panel.
+Each relationship note has a `color` frontmatter field and a semantic tag for use in Obsidian's Graph View **Groups** panel.
+
+### Intellusia → outbound
 
 | Color | Tag | Relationship | Meaning |
 |-------|-----|--------------|---------|
@@ -82,11 +84,42 @@ Each Intellusia relationship node has a `color` frontmatter field and a semantic
 | Green | `rel-market` | Intellusia → Government Contracting Pipeline | Market opportunity, business growth |
 | Orange | `rel-operations` | Intellusia → OpenClaw | Operational automation, connector layer |
 | Purple | `rel-capability` | Intellusia → Project Babel | AI fluency, knowledge, educational portfolio |
+| Yellow | `rel-identity` | Intellusia → Operator Profile | Founder decision model, self-duplication anchor |
+| Cyan | `rel-intelligence` | Intellusia → World View | External market radar, trend tracking |
+
+### Anomalie Grid → outbound
+
+| Color | Tag | Relationship | Meaning |
+|-------|-----|--------------|---------|
+| Pink | `rel-client` | Anomalie Grid → Client Connection | Client-facing SaaS surface, buyer journey |
+
+### OpenClaw → outbound
+
+| Color | Tag | Relationship | Meaning |
+|-------|-----|--------------|---------|
+| Violet | `rel-ai` | OpenClaw → Claude, OpenRouter | AI reasoning and model routing |
+| Indigo | `rel-messaging` | OpenClaw → Discord, Telegram, WhatsApp | Messaging and notification channels |
+| Blue | `rel-infrastructure` | OpenClaw → Hostinger VPS | Compute and hosting surface |
+| Teal | `rel-tooling` | OpenClaw → Postman MCP | API automation and MCP tooling |
+| Blue | `rel-video` | OpenClaw → YouTube | Video publishing and distribution |
 
 To apply colors in Obsidian graph view:
 1. Open Graph View → click the settings icon (top right)
 2. Go to **Groups**
 3. Add a group per tag above (e.g. `tag:rel-product`) and assign the matching color
+
+## Alternative views (besides global graph)
+
+| View | How to open | Best for |
+|------|------------|---------|
+| **Local graph** | Right-click any note → Open local graph | Single node's immediate connections — much cleaner than global |
+| **Backlinks pane** | Right panel → Backlinks icon | See what links INTO the current note |
+| **Outlinks pane** | Right panel → Outlinks icon | See what the current note links OUT to |
+| **Tags pane** | Left panel → Tags icon | Browse all notes by tag — filter by `rel-product`, `component`, etc. |
+| **Search** | Ctrl+Shift+F | Full text + frontmatter search across all notes |
+| **Dataview plugin** | If installed: inline queries | Query notes like a database — e.g., all `type: component` in a table |
+
+**Recommended for daily use:** Local graph from INTELLUSIA_GRAPH at depth 2, with `tag:relationship` hidden. Faster and less noisy than the global graph.
 
 ## Most useful default filter
 

@@ -4,8 +4,10 @@ tags:
   - relationship
   - connector
   - hideable
+  - rel-intelligence
 from: Intellusia Studios
 to: WORLD_VIEW
+color: cyan
 ---
 # Rel - Intellusia to World View
 
