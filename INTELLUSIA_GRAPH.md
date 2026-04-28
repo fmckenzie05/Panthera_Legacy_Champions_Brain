@@ -29,7 +29,7 @@ Related memory:
 - [[Azure Terraform Work]]
 - [[Project Babel]]
 - [[OPERATOR_PROFILE]]
-- [[WORLD_VIEW]]
+- [[WORLDVIEW]]
 - [[CLIENT_CONNECTION]]
 
 ## Self-duplication layer
@@ -42,7 +42,7 @@ Related memory:
 
 ## World view (industry trends)
 
-- [[WORLD_VIEW]]
+- [[WORLDVIEW]]
 - [[AI_DESIGN_PATTERNS]]
 - [[AI_SECURITY_TRENDS]]
 - [[SAAS_TRENDS]]

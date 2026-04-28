@@ -24,7 +24,7 @@ Video is one of the highest-leverage distribution surfaces for technical credibi
 
 - Publish [[Playbooks/Demo Playbook]] recordings (5-min cold demos, 30-min scoped demos).
 - Publish architecture walkthroughs aligned with [[VOICE_AND_STYLE]].
-- Publish founder content tied to [[WORLD_VIEW]] trend captures.
+- Publish founder content tied to [[WORLDVIEW]] trend captures.
 - Cross-post or excerpt clips to other [[OpenClaw]] surfaces (Discord, social).
 
 ## Connection notes

@@ -13,7 +13,7 @@ updated: 2026-04-27
 
 Trends in SaaS architecture, pricing, and GTM that affect how Intellusia ships and sells.
 
-Parent: [[WORLD_VIEW]]
+Parent: [[WORLDVIEW]]
 See also: [[CLIENT_CONNECTION]], [[Tenant Model]]
 
 ## Trend list

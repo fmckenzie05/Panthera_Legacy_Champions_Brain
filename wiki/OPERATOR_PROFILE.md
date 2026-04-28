@@ -51,7 +51,7 @@ If yes to all four, proceed. If unsure, write the draft and flag the uncertainty
 ## What the operator delegates
 
 - Routine connector work and integrations -> [[OpenClaw]] surface
-- Market signal scanning -> [[WORLD_VIEW]] hub
+- Market signal scanning -> [[WORLDVIEW]] hub (Part 2 — outward radar)
 - Repeatable research and lead intel -> [[Government Contracting Pipeline]]
 - Content drafting, positioning, sales-asset writing -> Kratos via [[MEMORY]]
 
@@ -69,6 +69,12 @@ A good operator stand-in should be able to answer:
 - What is Intellusia selling, and to whom? See [[MEMORY]] and [[Buyer Personas]].
 - What are we building next, and why that order? See [[FIRST_POPULATION_NOTE]].
 - How do clients actually touch the product? See [[CLIENT_CONNECTION]].
-- What trends should be steering the build? See [[WORLD_VIEW]].
+- What trends should be steering the build? See [[WORLDVIEW]] (Part 2 — outward radar).
 
 If any of those answers feel thin, update the linked note rather than answering from memory.
+
+## Recall Questions
+- **Q:** What is the stated point of the OPERATOR_PROFILE note? **A:** Self-duplication — anyone (human or AI) reading it should be able to make decisions that look and feel like the founder's without asking. (source: wiki/OPERATOR_PROFILE.md / intro)
+- **Q:** What is the operator's #1 optimization priority? **A:** Revenue path — anything that moves Intellusia closer to a paying client. (source: wiki/OPERATOR_PROFILE.md / What the operator optimizes for)
+- **Q:** Which two things does the operator explicitly NOT delegate? **A:** Final positioning of Anomalie Grid, and pricing/contract terms/direct client conversations (also: architectural decisions changing the product story, brand voice on public channels). (source: wiki/OPERATOR_PROFILE.md / What the operator does NOT delegate)
+- **Q:** What is the operator's working-style preference between architecture-first and shipping? **A:** Architecture-first thinker, but allergic to ideas that never ship — prefers compressed, sharp output. (source: wiki/OPERATOR_PROFILE.md / Who the operator is)

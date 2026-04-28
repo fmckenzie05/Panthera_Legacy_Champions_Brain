@@ -14,7 +14,7 @@ updated: 2026-04-27
 
 Live list of AI architecture and design patterns that should inform how Intellusia builds.
 
-Parent: [[WORLD_VIEW]]
+Parent: [[WORLDVIEW]]
 See also: [[WORLDVIEW]], [[The Oracle]], [[Nebuchadnezzar]]
 
 ## Pattern list

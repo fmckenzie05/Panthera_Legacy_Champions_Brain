@@ -13,7 +13,7 @@ updated: 2026-04-27
 
 Federal/state procurement and AI policy trends that affect Intellusia's gov-contracting capability and any future federal pursuit of [[Anomalie Grid]].
 
-Parent: [[WORLD_VIEW]]
+Parent: [[WORLDVIEW]]
 See also: [[Government Contracting Pipeline]], [[GOVERNMENT_CONTRACTING_PIPELINE_STRATEGY]]
 
 ## Trend list

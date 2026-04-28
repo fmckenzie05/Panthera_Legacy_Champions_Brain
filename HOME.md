@@ -45,7 +45,7 @@ This is the main entry point for the vault.
 
 ## World view (trends to steer what we build)
 
-- [[WORLD_VIEW]]
+- [[WORLDVIEW]] *(merged: internal beliefs + outward trends radar)*
 - [[AI_DESIGN_PATTERNS]]
 - [[AI_SECURITY_TRENDS]]
 - [[SAAS_TRENDS]]
@@ -105,7 +105,7 @@ If you want:
 - flagship product map -> [[Anomalie Grid]]
 - operations/connectors -> [[OpenClaw]]
 - how the operator decides -> [[OPERATOR_PROFILE]]
-- trends steering the build -> [[WORLD_VIEW]]
+- trends steering the build -> [[WORLDVIEW]]
 - how clients connect -> [[CLIENT_CONNECTION]]
 - workflow test -> [[TEMPLATE_VERIFICATION_NOTE]]
 - first live note -> [[FIRST_POPULATION_NOTE]]
@@ -116,3 +116,8 @@ If you want:
 2. Read [[MEMORY]]
 3. Explore [[INTELLUSIA_GRAPH]]
 4. Use [[GRAPH_FILTER_GUIDE]] when the graph gets noisy
+
+## Recall Questions
+- **Q:** Where in the vault does company context live? **A:** `MEMORY.md`. (source: HOME.md / How to use this vault)
+- **Q:** Where do the master list of wiki pages and the changelog live? **A:** `wiki/_index.md` and `wiki/_changelog.md`. (source: CLAUDE.md / Folder Structure)
+- **Q:** What is the recommended default flow when opening this vault? **A:** Open HOME → read MEMORY → explore INTELLUSIA_GRAPH → use GRAPH_FILTER_GUIDE when the graph gets noisy. (source: HOME.md / Recommended default flow)

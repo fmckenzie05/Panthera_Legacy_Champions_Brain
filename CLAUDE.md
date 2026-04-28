@@ -1,7 +1,7 @@
 # CLAUDE.md — LLM Wiki Schema (Karpathy Method)
 
 ## Purpose
-This vault is a living knowledge base about **[REPLACE THIS LINE WITH YOUR TOPIC]**.
+This vault is a living knowledge base about **Intellusia Studios — operator profile, worldview, OpenClaw connector ecosystem, Anomalie Grid product surface, client-connection model, and supporting trend research**.
 You (the AI) are responsible for reading source documents in `raw/` and maintaining a
 structured, interlinked wiki in `wiki/` that grows richer over time.
 
@@ -23,7 +23,7 @@ study system. Knowledge isn't *captured* — it's *retained*.
 - `raw/` — Source documents (PDFs, markdown, articles, transcripts, exports).
   **Read-only.** Never modify, rename, or delete files here.
 - `wiki/` — AI-maintained pages. All synthesis, summaries, and cross-references live here.
-- `templates/` — Optional manual page templates. Reference only; do not auto-edit.
+- `Templates/` — Optional manual page templates (capital T to match the existing folder). Reference only; do not auto-edit.
 
 Three special files inside `wiki/`:
 - `wiki/_index.md` — Master list of every wiki page with a one-line description.

@@ -72,6 +72,6 @@ Then either act, or escalate to the operator with that note attached.
 ## Anti-patterns to avoid
 
 - Re-architecting before shipping a slice.
-- Adding a new framework because it is trending in [[WORLD_VIEW]] without tying it to a flagship outcome.
+- Adding a new framework because it is trending in [[WORLDVIEW]] without tying it to a flagship outcome.
 - Promising features in copy that the architecture does not yet support.
 - Letting the vault grow into a museum instead of a working tool.

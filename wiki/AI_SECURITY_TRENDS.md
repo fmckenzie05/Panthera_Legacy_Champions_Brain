@@ -13,7 +13,7 @@ updated: 2026-04-27
 
 Trends in the AI-security market that should inform [[Anomalie Grid]] positioning and architecture.
 
-Parent: [[WORLD_VIEW]]
+Parent: [[WORLDVIEW]]
 See also: [[Anomalie Grid]], [[WORLDVIEW]]
 
 ## Trend list

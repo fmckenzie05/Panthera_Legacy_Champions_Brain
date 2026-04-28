@@ -16,7 +16,7 @@ The default cadence and workflow patterns for Intellusia Studios. Read this so t
 Related:
 - [[OPERATOR_PROFILE]]
 - [[OpenClaw]]
-- [[WORLD_VIEW]] (trend-scanning cadence lives there too)
+- [[WORLDVIEW]] (trend-scanning cadence lives there too)
 
 ## Daily
 
@@ -26,7 +26,7 @@ Related:
 
 ## Weekly
 
-- Review [[WORLD_VIEW]] sources. Capture anything that should change the build or the pitch.
+- Review [[WORLDVIEW]] sources. Capture anything that should change the build or the pitch.
 - Update [[MEMORY]] if anything material changed (status of [[Anomalie Grid]], new node, new client signal).
 - One outbound action: a post, a demo recording, an outreach batch, or a capability statement update.
 
@@ -45,7 +45,7 @@ Related:
 | Decision that affects strategy | Update relevant strategy note + [[MEMORY]] |
 | New external connector | Stub note + `Rel - OpenClaw to X` + update [[INTELLUSIA_GRAPH]] |
 | New client touchpoint | Update [[CLIENT_CONNECTION]] |
-| New trend to track | Add to [[WORLD_VIEW]] with a source |
+| New trend to track | Add to [[WORLDVIEW]] with a source |
 
 ## What "done" looks like for a working session
 

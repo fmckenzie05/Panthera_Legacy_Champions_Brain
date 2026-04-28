@@ -11,9 +11,9 @@ updated: 2026-04-27
 
 # TREND_TRACKING_CADENCE
 
-How [[WORLD_VIEW]] stays current. The point is not to consume the most signal — it is to update the build and the pitch when something real changes.
+How [[WORLDVIEW]] stays current. The point is not to consume the most signal — it is to update the build and the pitch when something real changes.
 
-Parent: [[WORLD_VIEW]]
+Parent: [[WORLDVIEW]]
 See also: [[OPERATING_RHYTHM]]
 
 ## Sources to scan

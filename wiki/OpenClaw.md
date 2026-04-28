@@ -28,3 +28,8 @@ Connectors:
 - [[OpenRouter]]
 - [[Postman MCP]]
 - [[Hostinger VPS]]
+
+## Recall Questions
+- **Q:** What role does OpenClaw play in the vault's company map? **A:** The operations and connector hub — the automation layer connecting external apps, providers, messaging surfaces, and hosting environments. (source: wiki/OpenClaw.md / Description)
+- **Q:** What does OpenClaw complement on the architectural side? **A:** The product architecture centered on Anomalie Grid — OpenClaw is the operational counterpart. (source: wiki/OpenClaw.md / Why it matters)
+- **Q:** Name three messaging-surface connectors linked from OpenClaw. **A:** Discord, Telegram, WhatsApp (also: YouTube). (source: wiki/OpenClaw.md / Connectors)

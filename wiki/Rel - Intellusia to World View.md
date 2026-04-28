@@ -9,7 +9,7 @@ to: WORLD_VIEW
 ---
 # Rel - Intellusia to World View
 
-Relationship node connecting [[Intellusia Studios]] to [[WORLD_VIEW]].
+Relationship node connecting [[Intellusia Studios]] to [[WORLDVIEW]].
 
 Meaning:
 - outward-facing radar
