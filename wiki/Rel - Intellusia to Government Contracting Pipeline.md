@@ -4,8 +4,10 @@ tags:
   - relationship
   - connector
   - hideable
+  - rel-market
 from: Intellusia Studios
 to: Government Contracting Pipeline
+color: green
 ---
 # Rel - Intellusia to Government Contracting Pipeline
 

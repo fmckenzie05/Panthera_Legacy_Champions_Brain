@@ -4,8 +4,10 @@ tags:
   - relationship
   - connector
   - hideable
+  - rel-operations
 from: Intellusia Studios
 to: OpenClaw
+color: orange
 ---
 # Rel - Intellusia to OpenClaw
 

@@ -4,8 +4,10 @@ tags:
   - relationship
   - connector
   - hideable
+  - rel-identity
 from: Intellusia Studios
 to: OPERATOR_PROFILE
+color: yellow
 ---
 # Rel - Intellusia to Operator Profile
 

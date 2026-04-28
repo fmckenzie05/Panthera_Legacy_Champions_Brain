@@ -4,8 +4,10 @@ tags:
   - relationship
   - connector
   - hideable
+  - rel-client
 from: Anomalie Grid
 to: CLIENT_CONNECTION
+color: pink
 ---
 # Rel - Anomalie Grid to Client Connection
 

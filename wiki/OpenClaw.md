@@ -23,7 +23,6 @@ Connectors:
 - [[Discord]]
 - [[Telegram]]
 - [[WhatsApp]]
-- [[YouTube]]
 - [[Claude]]
 - [[OpenRouter]]
 - [[Postman MCP]]

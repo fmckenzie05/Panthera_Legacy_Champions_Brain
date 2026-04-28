@@ -12,3 +12,7 @@ Thumbs.db
 
 # Obsidian trash
 .trash/
+
+# Empty orphan files
+anomaly.md
+Untitled/

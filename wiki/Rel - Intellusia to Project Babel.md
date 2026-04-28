@@ -4,8 +4,10 @@ tags:
   - relationship
   - connector
   - hideable
+  - rel-capability
 from: Intellusia Studios
 to: Project Babel
+color: purple
 ---
 # Rel - Intellusia to Project Babel
 

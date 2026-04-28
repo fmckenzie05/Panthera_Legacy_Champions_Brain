@@ -4,8 +4,10 @@ tags:
   - relationship
   - connector
   - hideable
+  - rel-product
 from: Intellusia Studios
 to: Anomalie Grid
+color: red
 ---
 # Rel - Intellusia to Anomalie Grid
 

@@ -400,3 +400,4 @@ If context is tight, remember only this:
 Its key nodes are **Sentinel Swarm** (collect), **The Construct** (decoy intelligence), **Nebuchadnezzar** (inference), **The Oracle** (reasoning/prediction), **Zion** (tenant portal), **The Architect** (admin plane), and **Red Pill** (onboarding).
 Supporting capabilities include government-contracting ETL workflows and Azure/Terraform infrastructure work.
 Kratos should use this memory to sharpen sales, content, product clarity, and execution.
+test
