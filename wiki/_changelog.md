@@ -9,6 +9,24 @@ Append-only log of every ingest and structural change to the wiki.
 
 ---
 
+## 2026-04-29 — Anomaly Grid CLI Story 1.4 (syslog + journald-stub) implemented
+
+**Source:** `repos/anomaly-grid-cli/crates/ag-adapters/src/journald_syslog/`.
+
+**What landed:**
+- `SyslogAdapter` — full file-tail implementation for BSD-style syslog text files (`/var/log/syslog`, `/var/log/auth.log`, etc.). Parses `MMM DD HH:MM:SS HOSTNAME TAG[PID]: MESSAGE` format, handles single-digit days with double-space padding, and skips tag-internal colons (e.g. `pam_unix(sudo:auth)`). Manual timestamp parser sidesteps a chrono `%e`/`%d` format-string bug on space-padded vs zero-padded days.
+- `JournaldAdapter` — feature-gated (`journald` Cargo feature, off by default). Constructible without the feature so config (Story 3.5) and `ag adapters` (Story 1.9) can reference it; `query()` yields a single `AdapterError::Unavailable` when the feature is off, so the engine continues with other adapters per NFR18. Real systemd-journal integration ships when `libsystemd-dev` is in the build environment.
+- Both adapters use loopback (127.0.0.1) for `Event.src` / `Event.dst` since host-level log records have no real network endpoint, and `Protocol::Other("syslog")` / `Protocol::Other("journald")`. Tag, PID, and message land in `Event.fields`.
+- `SyslogAdapter::new(paths, host, default_year)` — operator passes the year to anchor BSD-style timestamps that lack one; tests pass a fixed year, real deployments default to current year.
+
+**Tests:** 7 unit tests on the parser (sshd line, sudo with no PID, systemd line, short-line rejection, malformed timestamp, double-space day, separator-finder bracket-skip), 8 integration tests on the adapter (end-to-end ingest, hostname fallback, tag/PID extraction, time-window filter, missing-path tolerance, supported_versions, raw_line_ref shape), 3 unit tests on the journald stub (Unavailable behavior, build-mode introspection, name/version stability).
+
+**Cumulative state:** 48 tests pass workspace-wide (2 cli + 9 core + 37 adapters). `cargo build`, `cargo fmt --check`, `cargo clippy -D warnings -D unwrap_used -D expect_used` all clean.
+
+**Why:** Story 1.5 (`ag events`) needs at least one always-available adapter to demonstrate engine integration; SyslogAdapter is that adapter for any host without a Zeek install. JournaldAdapter is wired now (rather than Phase 2) so `ag adapters` listing and config schema are stable from v1 day one.
+
+---
+
 ## 2026-04-28 — Anomaly Grid CLI Story 1.3 (Zeek adapter) implemented
 
 **Source:** `repos/anomaly-grid-cli/crates/ag-adapters/src/zeek/`.
