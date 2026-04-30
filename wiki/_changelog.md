@@ -9,6 +9,19 @@ Append-only log of every ingest and structural change to the wiki.
 
 ---
 
+## 2026-04-30 — Kofi cyber notes ingested
+
+**Source:** `share_internal_kofi/Obsinthe/` (Kofi's TryHackMe-style cybersecurity notes).
+
+**What landed:**
+- 13 notes copied into `raw/` with `kofi-` prefix: anomaly-grid-architecture (Kofi's Matrix-themed arch spec), mitre, cyber-kill-chain, diamond-model, pyramid-of-pain, unified-kill-chain, soc-fundamentals, intro-to-siem, intro-to-edr, yara, sysmon, threat-intel-tools, intro-to-cti.
+- New synthesis page: [[Kofi Cyber Synthesis]] — maps Kofi's Matrix codenames (Oracle, Architect, Nebuchadnezzar, Zion, Construct, Sentinel Swarm, Red Pill) to existing I3 wiki nodes; positions Kofi's frameworks (MITRE, Diamond, Kill Chain, Pyramid of Pain) as analyst-buyer language for [[Anomalie Grid]].
+- Vault-root [[Kofi MOC]] created for navigation; cross-link added in Kofi's `Anomaly Grid.md` → [[Anomalie Grid]]; `Home.md` Quick Nav updated.
+
+**Rule:** Kofi's source folder is read-only. To pull in additional notes, copy into `raw/` with `kofi-` prefix and update the synthesis page — do not edit Kofi's originals.
+
+---
+
 ## 2026-04-29 — Anomaly Grid CLI Story 1.4 (syslog + journald-stub) implemented
 
 **Source:** `repos/anomaly-grid-cli/crates/ag-adapters/src/journald_syslog/`.

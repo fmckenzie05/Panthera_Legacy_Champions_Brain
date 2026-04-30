@@ -2,7 +2,7 @@
   "collapse-filter": false,
   "search": "",
   "showTags": true,
-  "showAttachments": true,
+  "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": false,
   "collapse-color-groups": true,
@@ -110,6 +110,20 @@
       "color": {
         "a": 1,
         "rgb": 5419488
+      }
+    },
+    {
+      "query": "path:raw/kofi-",
+      "color": {
+        "a": 1,
+        "rgb": 12745742
+      }
+    },
+    {
+      "query": "file:\"Kofi Cyber Synthesis\"",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
       }
     }
   ],
