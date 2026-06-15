@@ -15,7 +15,7 @@ updated: 2026-04-27
 This guide explains how to use the vault's metadata and tags to make the Obsidian graph useful instead of noisy.
 
 Related notes:
-- [[INTELLUSIA_GRAPH]]
+- [[ScriptLab8_I3]]
 - [[MEMORY]]
 
 ## Why filtering matters
@@ -79,10 +79,10 @@ Each relationship note has a `color` frontmatter field and a semantic tag for us
 
 | Color | Tag | Relationship | Meaning |
 |-------|-----|--------------|---------|
+| Gold | `rel-brand` | Intellusia → ScriptLab_I3 | **Parent → client-facing brand** — ScriptLab_I3 is the face; Intellusia is the holder |
 | Red | `rel-product` | Intellusia → Anomalie Grid | Flagship product, primary commercial narrative |
 | Blue | `rel-infrastructure` | Intellusia → Azure Terraform Work | Infrastructure delivery, Azure-first credibility |
 | Green | `rel-market` | Intellusia → Government Contracting Pipeline | Market opportunity, business growth |
-| Orange | `rel-operations` | Intellusia → OpenClaw | Operational automation, connector layer |
 | Purple | `rel-capability` | Intellusia → Project Babel | AI fluency, knowledge, educational portfolio |
 | Yellow | `rel-identity` | Intellusia → Operator Profile | Founder decision model, self-duplication anchor |
 | Cyan | `rel-intelligence` | Intellusia → World View | External market radar, trend tracking |
@@ -92,16 +92,7 @@ Each relationship note has a `color` frontmatter field and a semantic tag for us
 | Color | Tag | Relationship | Meaning |
 |-------|-----|--------------|---------|
 | Pink | `rel-client` | Anomalie Grid → Client Connection | Client-facing SaaS surface, buyer journey |
-
-### OpenClaw → outbound
-
-| Color | Tag | Relationship | Meaning |
-|-------|-----|--------------|---------|
-| Violet | `rel-ai` | OpenClaw → Claude, OpenRouter | AI reasoning and model routing |
-| Indigo | `rel-messaging` | OpenClaw → Discord, Telegram, WhatsApp | Messaging and notification channels |
-| Blue | `rel-infrastructure` | OpenClaw → Hostinger VPS | Compute and hosting surface |
-| Teal | `rel-tooling` | OpenClaw → Postman MCP | API automation and MCP tooling |
-| Blue | `rel-video` | OpenClaw → YouTube | Video publishing and distribution |
+| Cyan | `rel-intelligence` | Anomalie Grid → Kofi Cyber Synthesis | Analyst knowledge layer — SOC frameworks, MITRE, Kill Chain, Diamond Model |
 
 To apply colors in Obsidian graph view:
 1. Open Graph View → click the settings icon (top right)
@@ -119,7 +110,7 @@ To apply colors in Obsidian graph view:
 | **Search** | Ctrl+Shift+F | Full text + frontmatter search across all notes |
 | **Dataview plugin** | If installed: inline queries | Query notes like a database — e.g., all `type: component` in a table |
 
-**Recommended for daily use:** Local graph from INTELLUSIA_GRAPH at depth 2, with `tag:relationship` hidden. Faster and less noisy than the global graph.
+**Recommended for daily use:** Local graph from ScriptLab8_I3 at depth 2, with `tag:relationship` hidden. Faster and less noisy than the global graph.
 
 ## Most useful default filter
 
@@ -135,7 +126,6 @@ That removes the connector layer and leaves the cleaner structural map.
 
 Use when:
 - you want to understand the whole company map
-- you want to see how OpenClaw, Anomalie Grid, and company capabilities connect
 
 Settings:
 - keep all notes visible
@@ -156,14 +146,14 @@ Hide:
 - `tag:relationship`
 
 Focus on:
-- `Intellusia Studios`
+- `Intellusia Studios` *(parent company)*
+- `ScriptLab_I3` *(client-facing brand)*
 - `Anomalie Grid`
-- `OpenClaw`
 - `Government Contracting Pipeline`
 - `Azure Terraform Work`
 - `Project Babel`
 - `MEMORY`
-- `INTELLUSIA_GRAPH`
+- `ScriptLab8_I3` *(graph hub)*
 
 ## 3. Product architecture view
 
@@ -185,6 +175,8 @@ Useful nodes:
 - `Zion`
 - `The Architect`
 - `Red Pill Onboarding`
+- `Anomaly Grid CLI` *(sibling solo-operator CLI)*
+- `Kofi Cyber Synthesis` *(analyst knowledge layer — tag: knowledge)*
 
 Optional:
 - hide `tag:relationship`
@@ -192,7 +184,6 @@ Optional:
 ## 4. Operations and connectors view
 
 Use when:
-- you want to inspect OpenClaw and connected surfaces
 - you want to understand the automation and messaging side
 
 Show or focus on:
@@ -201,7 +192,6 @@ Show or focus on:
 - `tag:infrastructure`
 
 Useful nodes:
-- `OpenClaw`
 - `Discord`
 - `Telegram`
 - `WhatsApp`
@@ -247,7 +237,6 @@ Focus on:
 Focus on:
 - `tag:product OR tag:component OR tag:infrastructure`
 
-### Only OpenClaw ecosystem
 
 Focus on:
 - `tag:operations OR tag:connector`
@@ -273,7 +262,7 @@ Hide them when:
 
 ## Suggested workflow
 
-1. Open `[[INTELLUSIA_GRAPH]]`
+1. Open `[[ScriptLab8_I3]]`
 2. Start with relationship notes hidden
 3. Review the main company and product nodes
 4. Turn relationship notes back on when you want the fuller systems map
@@ -283,7 +272,7 @@ Hide them when:
 
 If you only want one reliable setup:
 
-- Open local graph from `[[INTELLUSIA_GRAPH]]`
+- Open local graph from `[[ScriptLab8_I3]]`
 - Set depth to `2` or `3`
 - Hide `tag:relationship`
 

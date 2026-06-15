@@ -4,17 +4,27 @@ tags:
   - infrastructure
   - hosting
   - connector
-entity: OpenClaw
+entity: ScriptLabs Studios
+updated: 2026-06-04
 ---
 # Hostinger VPS
 
-Infrastructure host node linked from [[OpenClaw]].
+Infrastructure compute node for **ScriptLabs Studios**.
 
-## Description
+## Role
 
-This note represents the VPS or hosting surface associated with [[OpenClaw]] operations.
-It exists so hosting and deployment surfaces appear in the graph as infrastructure, not just as disconnected operational details.
+Primary runtime for **Hermes** (NousResearch fine-tuned LLM). All AI-driven automation for the ScriptLabs agentic delivery pipeline runs here.
 
 ## Why it matters
 
-It makes the automation stack easier to understand end to end.
+Self-hosted compute = no per-token API cost at scale. The model is fine-tuned for ScriptLabs dev workflows — not a generic API call. Keeping this node visible in the graph makes infra dependencies explicit.
+
+## Risk
+
+Single node — if VPS goes down, Hermes goes down. [[OpenRouter]] is the pre-configured fallback for model routing.
+
+## Connection notes
+
+- Runs: Hermes LLM, [[ScripLabStudio8]] automation workloads, scheduled jobs
+- Deploy script: `scripts/scriptlabs-hostinger.sh`
+- Credentials kept outside vault in secret store referenced by [[ScripLabStudio8]]

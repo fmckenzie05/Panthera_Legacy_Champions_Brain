@@ -5,111 +5,181 @@
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": false,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
-    {
-      "query": "Rel - Intellusia",
-      "color": {
-        "a": 1,
-        "rgb": 15860226
-      }
-    },
-    {
-      "query": "Anomalie Grid.md",
-      "color": {
-        "a": 1,
-        "rgb": 15860226
-      }
-    },
-    {
-      "query": "Rel - Intellusia",
-      "color": {
-        "a": 1,
-        "rgb": 267515
-      }
-    },
-    {
-      "query": "Azure Terraform Work.md",
-      "color": {
-        "a": 1,
-        "rgb": 267515
-      }
-    },
-    {
-      "query": "Rel - Intellusia",
-      "color": {
-        "a": 1,
-        "rgb": 58884
-      }
-    },
-    {
-      "query": "Government Contracting Pipeline.md",
-      "color": {
-        "a": 1,
-        "rgb": 58884
-      }
-    },
-    {
-      "query": " rel-market",
-      "color": {
-        "a": 1,
-        "rgb": 58884
-      }
-    },
-    {
-      "query": " Rel - Intellusia",
-      "color": {
-        "a": 1,
-        "rgb": 14508302
-      }
-    },
-    {
-      "query": "OpenClaw.md",
-      "color": {
-        "a": 1,
-        "rgb": 14508302
-      }
-    },
-    {
-      "query": "rel-operations",
-      "color": {
-        "a": 1,
-        "rgb": 14508302
-      }
-    },
-    {
-      "query": "Rel - Intellusia",
-      "color": {
-        "a": 1,
-        "rgb": 7865835
-      }
-    },
-    {
-      "query": "Project Babel.md",
-      "color": {
-        "a": 1,
-        "rgb": 7865835
-      }
-    },
-    {
-      "query": "rel-capability",
-      "color": {
-        "a": 1,
-        "rgb": 7865835
-      }
-    },
-    {
-      "query": "rel-infrastructure",
-      "color": {
-        "a": 1,
-        "rgb": 267515
-      }
-    },
     {
       "query": "MEMORY",
       "color": {
         "a": 1,
-        "rgb": 5419488
+        "rgb": 16173326
+      }
+    },
+    {
+      "query": "file:\"Intellusia Studios\"",
+      "color": {
+        "a": 1,
+        "rgb": 16757504
+      }
+    },
+    {
+      "query": "file:\"ScriptLab8_I3\"",
+      "color": {
+        "a": 1,
+        "rgb": 16757504
+      }
+    },
+    {
+      "query": "file:\"ScriptLab_I3\"",
+      "color": {
+        "a": 1,
+        "rgb": 15159356
+      }
+    },
+    {
+      "query": "file:\"ScripLabStudio8\"",
+      "color": {
+        "a": 1,
+        "rgb": 15159356
+      }
+    },
+    {
+      "query": "file:\"LLM_Soul\"",
+      "color": {
+        "a": 1,
+        "rgb": 15159356
+      }
+    },
+    {
+      "query": "file:\"Studio_Workflow\"",
+      "color": {
+        "a": 1,
+        "rgb": 15159356
+      }
+    },
+    {
+      "query": "file:\"Behavioral_Rules\"",
+      "color": {
+        "a": 1,
+        "rgb": 15159356
+      }
+    },
+    {
+      "query": "file:\"Anomalie Grid\"",
+      "color": {
+        "a": 1,
+        "rgb": 15105570
+      }
+    },
+    {
+      "query": "file:\"Anomaly Grid CLI\"",
+      "color": {
+        "a": 1,
+        "rgb": 16739179
+      }
+    },
+    {
+      "query": "file:\"Sentinel Swarm\"",
+      "color": {
+        "a": 1,
+        "rgb": 15159356
+      }
+    },
+    {
+      "query": "file:\"Nebuchadnezzar\"",
+      "color": {
+        "a": 1,
+        "rgb": 15965202
+      }
+    },
+    {
+      "query": "file:\"The Oracle\"",
+      "color": {
+        "a": 1,
+        "rgb": 15844367
+      }
+    },
+    {
+      "query": "file:\"Zion\"",
+      "color": {
+        "a": 1,
+        "rgb": 3066993
+      }
+    },
+    {
+      "query": "file:\"The Architect\"",
+      "color": {
+        "a": 1,
+        "rgb": 3447003
+      }
+    },
+    {
+      "query": "file:\"The Construct\"",
+      "color": {
+        "a": 1,
+        "rgb": 10181046
+      }
+    },
+    {
+      "query": "file:\"Red Pill Onboarding\"",
+      "color": {
+        "a": 1,
+        "rgb": 15159356
+      }
+    },
+    {
+      "query": "file:\"MVFN\"",
+      "color": {
+        "a": 1,
+        "rgb": 10181046
+      }
+    },
+    {
+      "query": "file:\"Government Contracting Pipeline\"",
+      "color": {
+        "a": 1,
+        "rgb": 2600544
+      }
+    },
+    {
+      "query": "file:\"Azure Terraform Work\"",
+      "color": {
+        "a": 1,
+        "rgb": 2719929
+      }
+    },
+    {
+      "query": "file:\"Project Babel\"",
+      "color": {
+        "a": 1,
+        "rgb": 9323693
+      }
+    },
+    {
+      "query": "file:\"OPERATOR_PROFILE\"",
+      "color": {
+        "a": 1,
+        "rgb": 16173326
+      }
+    },
+    {
+      "query": "file:\"WORLDVIEW\"",
+      "color": {
+        "a": 1,
+        "rgb": 48340
+      }
+    },
+    {
+      "query": "file:\"Kofi Cyber Synthesis\"",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "file:\"Kofi Anomaly Grid Architecture\"",
+      "color": {
+        "a": 1,
+        "rgb": 48340
       }
     },
     {
@@ -120,23 +190,79 @@
       }
     },
     {
-      "query": "file:\"Kofi Cyber Synthesis\"",
+      "query": "path:wiki/kofi-",
       "color": {
         "a": 1,
-        "rgb": 16766720
+        "rgb": 12745742
+      }
+    },
+    {
+      "query": "rel-brand",
+      "color": {
+        "a": 1,
+        "rgb": 16173326
+      }
+    },
+    {
+      "query": "rel-product",
+      "color": {
+        "a": 1,
+        "rgb": 15105570
+      }
+    },
+    {
+      "query": "rel-affiliate",
+      "color": {
+        "a": 1,
+        "rgb": 16747520
+      }
+    },
+    {
+      "query": "rel-intelligence",
+      "color": {
+        "a": 1,
+        "rgb": 48340
+      }
+    },
+    {
+      "query": "rel-market",
+      "color": {
+        "a": 1,
+        "rgb": 2600544
+      }
+    },
+    {
+      "query": "rel-infrastructure",
+      "color": {
+        "a": 1,
+        "rgb": 2719929
+      }
+    },
+    {
+      "query": "rel-capability",
+      "color": {
+        "a": 1,
+        "rgb": 9323693
+      }
+    },
+    {
+      "query": "rel-identity",
+      "color": {
+        "a": 1,
+        "rgb": 16173326
       }
     }
   ],
   "collapse-display": false,
   "showArrow": true,
-  "textFadeMultiplier": -1.1,
-  "nodeSizeMultiplier": 0.878385416666667,
-  "lineSizeMultiplier": 1.13359375,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 0.330729166666667,
-  "linkDistance": 220,
-  "scale": 0.32133638605035614,
+  "textFadeMultiplier": -2.5,
+  "nodeSizeMultiplier": 1.3,
+  "lineSizeMultiplier": 1.8,
+  "collapse-forces": false,
+  "centerStrength": 0.32,
+  "repelStrength": 16,
+  "linkStrength": 0.28,
+  "linkDistance": 300,
+  "scale": 0.03103567592594219,
   "close": true
 }

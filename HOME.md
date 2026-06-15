@@ -16,7 +16,7 @@ This is the main entry point for the vault.
 ## Start here
 
 - [[MEMORY]]
-- [[INTELLUSIA_GRAPH]]
+- [[ScriptLab8_I3]]
 - [[GRAPH_FILTER_GUIDE]]
 - [[TEMPLATE_VERIFICATION_NOTE]]
 - [[Templates/NEW_NOTE_TEMPLATE]]
@@ -64,9 +64,12 @@ This is the main entry point for the vault.
 
 ## Core company map
 
-- [[Intellusia Studios]]
-- [[Anomalie Grid]]
-- [[OpenClaw]]
+| Entity | Role |
+|---|---|
+| [[Intellusia Studios]] | Mother company — legal entity, owner, R&D, GovCon, Anomalie Grid |
+| [[ScriptLab_I3/_index\|ScriptLab_I3]] | Client-facing brand — web, mobile, Web3 delivery studio |
+| [[Anomalie Grid]] | Flagship AI-security platform (under Intellusia) |
+
 
 ## Product architecture
 
@@ -100,10 +103,10 @@ This is the main entry point for the vault.
 If you want:
 
 - company context -> [[MEMORY]]
-- graph view -> [[INTELLUSIA_GRAPH]]
+- graph view -> [[ScriptLab8_I3]]
 - filter help -> [[GRAPH_FILTER_GUIDE]]
 - flagship product map -> [[Anomalie Grid]]
-- operations/connectors -> [[OpenClaw]]
+- studio workflow -> [[ScriptLab_I3/Studio_Workflow]]
 - how the operator decides -> [[OPERATOR_PROFILE]]
 - trends steering the build -> [[WORLDVIEW]]
 - how clients connect -> [[CLIENT_CONNECTION]]
@@ -114,10 +117,10 @@ If you want:
 
 1. Open [[HOME]]
 2. Read [[MEMORY]]
-3. Explore [[INTELLUSIA_GRAPH]]
+3. Explore [[ScriptLab8_I3]]
 4. Use [[GRAPH_FILTER_GUIDE]] when the graph gets noisy
 
 ## Recall Questions
 - **Q:** Where in the vault does company context live? **A:** `MEMORY.md`. (source: HOME.md / How to use this vault)
 - **Q:** Where do the master list of wiki pages and the changelog live? **A:** `wiki/_index.md` and `wiki/_changelog.md`. (source: CLAUDE.md / Folder Structure)
-- **Q:** What is the recommended default flow when opening this vault? **A:** Open HOME → read MEMORY → explore INTELLUSIA_GRAPH → use GRAPH_FILTER_GUIDE when the graph gets noisy. (source: HOME.md / Recommended default flow)
+- **Q:** What is the recommended default flow when opening this vault? **A:** Open HOME → read MEMORY → explore ScriptLab8_I3 → use GRAPH_FILTER_GUIDE when the graph gets noisy. (source: HOME.md / Recommended default flow)

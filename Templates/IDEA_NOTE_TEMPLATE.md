@@ -39,7 +39,7 @@ Why could this idea matter to the company, product, or operations?
 
 - [[HOME]]
 - [[MEMORY]]
-- [[INTELLUSIA_GRAPH]]
+- [[ScriptLab8_I3]]
 - [[Intellusia Studios]]
 - [[Anomalie Grid]]
 - [[OpenClaw]]

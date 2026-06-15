@@ -24,7 +24,7 @@ Why does this belong in the vault?
 
 - [[HOME]]
 - [[MEMORY]]
-- [[INTELLUSIA_GRAPH]]
+- [[ScriptLab8_I3]]
 
 ## Related notes
 

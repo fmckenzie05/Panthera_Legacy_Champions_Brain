@@ -53,7 +53,7 @@ Why does this meeting matter to the company, product, or operations?
 
 - [[HOME]]
 - [[MEMORY]]
-- [[INTELLUSIA_GRAPH]]
+- [[ScriptLab8_I3]]
 
 ## Related notes
 

@@ -18,7 +18,18 @@ Read this before planning, writing, selling, or structuring work.
 
 Graph hub:
 - [[HOME]]
-- [[INTELLUSIA_GRAPH]]
+- [[ScriptLab8_I3]]
+
+## Operator identity
+
+**Fernando A McKenzie** is the founder and primary operator across both Intellusia tracks:
+- **Intellusia Studios** — parent company; Anomalie Grid, GovCon, architecture R&D
+- **ScriptLabs Studios (ScriptLab_I3)** — CIO & Co-Founder; client-facing web/mobile/Web3 studio
+- **Co-founder (ScriptLabs):** Honorine Ndom Ndzah (CEO)
+
+Background: 8+ years military logistics, Enterprise Architect at Costco IT, B.S. IT + M.S. Computer Science. (source: about/page.tsx — ScriptLabs_Site repo)
+
+---
 
 ## Identity anchor
 
@@ -33,6 +44,31 @@ Core identity:
 Reference soul:
 - Kratos exists to move revenue, audience, client trust, technical clarity, and execution velocity forward.
 - AI security is the edge, but the business also spans adjacent systems, automation, infrastructure, and government-contracting workflows.
+
+## Hierarchy structure
+
+Three-layer model. **Intellusia I3 is the hierarchy head.**
+
+```
+Intellusia I3          ← holding company / hierarchy head
+├── ScriptLabs Studios ← sales & delivery face (drives revenue)
+│   └── Soul & Workflow (Hermes LLM + agentic delivery stack)
+├── Anomalie Grid      ← flagship product (Intellusia)
+└── GovCon / Azure / Babel  ← supporting capabilities (Intellusia)
+```
+
+| Layer | Entity | Role |
+|---|---|---|
+| **Hierarchy head** | Intellusia I3 | Holding company — IP owner, Anomalie Grid, GovCon, strategy |
+| **Revenue face** | ScriptLabs Studios | Client-facing brand — web, mobile, Web3; drives sales |
+| **Intelligence layer** | Soul & Workflow (ScriptLab_I3 cluster) | Hermes identity + agentic delivery pipeline |
+
+
+All studio infrastructure (Hostinger VPS, Hermes, GHL, Discord, Telegram, WhatsApp, YouTube, Claude, OpenRouter, Postman MCP) belongs to the **ScriptLabs Studios** layer.
+
+Messaging rule: Anomalie Grid + GovCon = Intellusia brand. Web/mobile/Web3 delivery + studio ops = ScriptLabs brand.
+
+---
 
 ## Company snapshot
 
@@ -170,22 +206,55 @@ Strategic meaning:
 - Strong narrative asset for sales and marketing
 - Turns onboarding into a branded experience instead of a generic setup checklist
 
+### 10. Anomaly Grid CLI
+Role:
+- Sibling solo-operator product (separate from the SaaS platform)
+- Single Rust binary (`ag`), local-first, no daemon, no SaaS
+
+Purpose:
+- Targets indie pentesters, fractional SOCs, homelab defenders
+- Operator types plain-English questions about their own network and gets back tactical answers with receipts (data source, time window, query plan, confidence)
+- v1 telemetry adapters: Zeek and journald/syslog; LLM: Anthropic Claude
+
+Strategic meaning:
+- Defensive posture in an AI-tool category that's otherwise offensive — strong differentiator
+- Distribution model: open-source-first; no v1 revenue — builds positioning and dogfood credibility
+- Intellusia self-use floor: runs on every paid client engagement within 6 months
+- Sibling repo: `fmckenzie05/anomaly-grid-cli`; 4-crate Cargo workspace (ag-core, ag-adapters, ag-cli, ag-eval)
+- Status as of 2026-04-29: Stories 1.1–1.4 landed; Zeek + syslog + journald adapters shipped; 48 tests passing
+
+### 11. Kofi Cyber Synthesis
+Role:
+- Knowledge layer — analyst-side SOC/cyber fundamentals contributed by Kofi
+- Sources: `raw/kofi-*.md`; synthesized in `wiki/Kofi Cyber Synthesis.md`
+
+Purpose:
+- Grounds Anomalie Grid's detection architecture in real analyst workflow and buyer language
+- Covers: MITRE ATT&CK, Cyber Kill Chain, Unified Kill Chain, Diamond Model, Pyramid of Pain, SOC L1/L2 workflow, SIEM/EDR patterns, YARA, Sysmon, CTI tooling
+
+Strategic meaning:
+- Kofi's notes describe exactly the SOC analyst workflow Anomalie Grid plugs into — use them for analyst-buyer messaging, detection-design language, and demo framing
+- Pyramid of Pain argument: passive fingerprinting (TLS/JA3) is high-value detection because TTPs at the tip beat hashes at the base — cite this when positioning Sentinel Swarm
+
 ## Node relationships
 
 Use this mental graph:
 
-- **Intellusia Studios** owns and operates **Anomalie Grid**
-- **Anomalie Grid** is the umbrella platform
+- **Intellusia Studios** owns and operates **Anomalie Grid** and **Anomaly Grid CLI**
+- **Anomalie Grid** is the umbrella SaaS platform (multi-tenant)
+- **Anomaly Grid CLI** is the sibling solo-operator Rust CLI (local-first, defensive, open-source)
 - **Sentinel Swarm** and **The Construct** generate data
 - **Nebuchadnezzar** processes that data with Morpheus
 - **The Oracle** reasons over Neb outputs and produces predictions
 - **Zion** presents tenant-facing truth, alerts, and workflows
 - **The Architect** manages internal administration and platform control
 - **Red Pill onboarding** is the customer entry path into the whole system
+- **Kofi Cyber Synthesis** is the analyst knowledge layer — SOC frameworks, MITRE, Kill Chain, Diamond Model, Pyramid of Pain; defines the buyer language the platform speaks
 
 Short version:
 
 `Collectors + decoys -> Morpheus inference -> agentic reasoning -> tenant portal + admin control`
+`Kofi knowledge layer -> analyst language + detection-design vocabulary`
 
 ## Current state of the flagship product
 
@@ -360,6 +429,8 @@ When deciding what to work on next, bias toward tasks that strengthen one of the
   - Zion
   - The Architect
   - Red Pill onboarding
+- Anomaly Grid CLI *(sibling — solo-operator Rust CLI; open-source; defensive)*
+- Kofi Cyber Synthesis *(knowledge layer — analyst SOC/cyber fundamentals)*
 
 ### Supporting company capability graph
 - Government Contracting ETL Pipeline
@@ -398,6 +469,8 @@ If context is tight, remember only this:
 
 **Intellusia Studios** is building **Anomalie Grid**, an Azure-first, Morpheus-powered AI-security platform.
 Its key nodes are **Sentinel Swarm** (collect), **The Construct** (decoy intelligence), **Nebuchadnezzar** (inference), **The Oracle** (reasoning/prediction), **Zion** (tenant portal), **The Architect** (admin plane), and **Red Pill** (onboarding).
+Sibling product: **Anomaly Grid CLI** — solo-operator Rust CLI, defensive, local-first, open-source.
+Knowledge layer: **Kofi Cyber Synthesis** — analyst SOC/cyber fundamentals (MITRE, Kill Chain, Diamond Model, Pyramid of Pain); grounds the platform's detection-design vocabulary.
+**ScriptLabs Studios** is the client-facing revenue brand under Intellusia I3 — web, mobile, Web3 delivery powered by the Hermes + Claude Code agentic stack.
 Supporting capabilities include government-contracting ETL workflows and Azure/Terraform infrastructure work.
 Kratos should use this memory to sharpen sales, content, product clarity, and execution.
-test

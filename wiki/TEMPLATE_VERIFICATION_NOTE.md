@@ -24,13 +24,13 @@ It confirms that future notes can start with working metadata, working navigatio
 
 - [[HOME]]
 - [[MEMORY]]
-- [[INTELLUSIA_GRAPH]]
+- [[ScriptLab8_I3]]
 
 ## Related notes
 
 - [[Intellusia Studios]]
 - [[Anomalie Grid]]
-- [[OpenClaw]]
+- [[ScriptLab_I3/_index]]
 
 ## Details
 

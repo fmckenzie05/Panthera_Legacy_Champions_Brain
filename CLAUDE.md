@@ -1,4 +1,4 @@
-# CLAUDE.md — Intellusia Studios Knowledge Base
+# CLAUDE.md — Intellusia I3 / ScriptLabs Studios Knowledge Base
 
 ## What this vault is
 
@@ -56,7 +56,7 @@ Three special files inside `wiki/`:
 - `wiki/_changelog.md` — append-only log of every ingest/restructure
 - `wiki/_flashcards.md` — aggregated recall deck (mirrors per-page recall questions)
 
-The handful of files that **stay at vault root** (not in `wiki/`): `CLAUDE.md`, `MEMORY.md`, `HOME.md`, `INTELLUSIA_GRAPH.md`, `GRAPH_FILTER_GUIDE.md`, `LICENSE`.
+The handful of files that **stay at vault root** (not in `wiki/`): `CLAUDE.md`, `MEMORY.md`, `HOME.md`, `ScriptLab8_I3.md`, `GRAPH_FILTER_GUIDE.md`, `LICENSE`.
 
 ---
 
@@ -67,7 +67,7 @@ The handful of files that **stay at vault root** (not in `wiki/`): `CLAUDE.md`, 
 | `company` | Intellusia Studios | Parent entity |
 | `product` | Anomalie Grid | Flagship platform |
 | `component` | Sentinel Swarm, Nebuchadnezzar, The Construct, The Oracle, Zion, The Architect | Platform subcomponents |
-| `connector` | Claude, Discord, Telegram, OpenRouter, Hostinger VPS, YouTube | OpenClaw surfaces |
+| `connector` | Claude, Discord, Telegram, OpenRouter, Hostinger VPS, YouTube | ScriptLabs studio connectors |
 | `capability` | Government Contracting Pipeline, Azure Terraform Work, Project Babel | Adjacent company capabilities |
 | `relationship` | `Rel - X to Y` files | Graph edge nodes — hideable in Obsidian graph view |
 | `master-memory` | MEMORY.md | Single source of operating truth |
@@ -78,7 +78,7 @@ The handful of files that **stay at vault root** (not in `wiki/`): `CLAUDE.md`, 
 ### Key hub notes
 
 - `[[HOME]]` — vault entry point and navigation (root)
-- `[[INTELLUSIA_GRAPH]]` — graph map with external folder links (root)
+- `[[ScriptLab8_I3]]` — graph map and hierarchy hub (root)
 - `[[GRAPH_FILTER_GUIDE]]` — how to filter and read the Obsidian graph (root)
 - `[[CLIENT_CONNECTION]]` — buyer personas, client journey, tenant model, onboarding, renewal (`wiki/`)
 - `[[OPERATOR_PROFILE]]` — decision principles, operating rhythm, voice and style (`wiki/`)
@@ -194,7 +194,7 @@ When adding or updating content in this vault:
 1. **Update `MEMORY.md`** if the new information changes the company snapshot, product status, tech stack, or messaging.
 2. **Keep node stubs accurate.** If a component's role changes, update its note in `wiki/`.
 3. **Add relationship notes** in `wiki/` when a new meaningful connection between nodes exists and you want it visible in the graph.
-4. **Update `INTELLUSIA_GRAPH.md`** when new top-level nodes are added.
+4. **Update `ScriptLab8_I3.md`** when new top-level nodes are added.
 5. **Update `HOME.md`** when new strategy notes or major hubs are added.
 6. **Update `wiki/_index.md`** when new wiki pages are added.
 7. **Append to `wiki/_changelog.md`** for any structural change or batch ingest.

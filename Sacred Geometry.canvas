@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"bg_outer","type":"group","x":-700,"y":-700,"width":1400,"height":1400,"color":"6","label":"✦  Intellusia I3  —  Seed of Life  ✦"},
+		{"id":"memory","type":"file","file":"MEMORY.md","x":-110,"y":-30,"width":220,"height":50,"color":"#F6C90E"},
+		{"id":"scriptlabs","type":"file","file":"wiki/ScriptLab_I3/ScriptLab_I3.md","x":-110,"y":-480,"width":220,"height":60,"color":"#E74C3C"},
+		{"id":"anomalie","type":"file","file":"wiki/Anomaly Grid/Anomalie Grid.md","x":280,"y":-255,"width":220,"height":60,"color":"#E67E22"},
+		{"id":"nvfn","type":"file","file":"wiki/MVFN.md","x":280,"y":195,"width":220,"height":60,"color":"#9B59B6"},
+		{"id":"azure","type":"file","file":"wiki/Azure Terraform Work.md","x":-500,"y":195,"width":220,"height":75,"color":"#2980B9"},
+		{"id":"babel","type":"text","text":"**Project Babel**\n*AI Education / NLP*","x":-500,"y":-255,"width":220,"height":60,"color":"#8E44AD"},
+		{"id":"label_sl","type":"text","text":"Studio","x":-45,"y":-545,"width":90,"height":30},
+		{"id":"label_ag","type":"text","text":"Product","x":345,"y":-320,"width":90,"height":30},
+		{"id":"label_pb","type":"text","text":"Education","x":-475,"y":-320,"width":100,"height":30},
+		{"id":"govcon","type":"file","file":"wiki/ScriptLab_I3/Government Contracting Pipeline.md","x":-110,"y":420,"width":220,"height":60,"color":"#27AE60"},
+		{"id":"label_nvfn","type":"text","text":"MVFN","x":345,"y":270,"width":100,"height":30},
+		{"id":"label_gc","type":"text","text":"GovCon","x":-45,"y":490,"width":90,"height":30},
+		{"id":"label_az","type":"text","text":"Cloud","x":-465,"y":270,"width":90,"height":30}
+	],
+	"edges":[
+		{"id":"spoke_sl","fromNode":"memory","fromSide":"top","toNode":"scriptlabs","toSide":"bottom","toEnd":"none","color":"#F6C90E"},
+		{"id":"spoke_ag","fromNode":"memory","fromSide":"top","toNode":"anomalie","toSide":"bottom","toEnd":"none","color":"#F6C90E"},
+		{"id":"spoke_nvfn","fromNode":"memory","fromSide":"bottom","toNode":"nvfn","toSide":"top","toEnd":"none","color":"#F6C90E"},
+		{"id":"spoke_gc","fromNode":"memory","fromSide":"bottom","toNode":"govcon","toSide":"top","toEnd":"none","color":"#F6C90E"},
+		{"id":"spoke_az","fromNode":"memory","fromSide":"bottom","toNode":"azure","toSide":"top","toEnd":"none","color":"#F6C90E"},
+		{"id":"spoke_pb","fromNode":"memory","fromSide":"top","toNode":"babel","toSide":"bottom","toEnd":"none","color":"#F6C90E"},
+		{"id":"ring_sl_ag","fromNode":"scriptlabs","fromSide":"bottom","toNode":"anomalie","toSide":"top","toEnd":"none","color":"#E74C3C"},
+		{"id":"ring_ag_nvfn","fromNode":"anomalie","fromSide":"bottom","toNode":"nvfn","toSide":"top","toEnd":"none","color":"#E67E22"},
+		{"id":"ring_nvfn_gc","fromNode":"nvfn","fromSide":"bottom","toNode":"govcon","toSide":"top","toEnd":"none","color":"#9B59B6"},
+		{"id":"ring_gc_az","fromNode":"govcon","fromSide":"top","toNode":"azure","toSide":"bottom","toEnd":"none","color":"#27AE60"},
+		{"id":"ring_az_pb","fromNode":"azure","fromSide":"top","toNode":"babel","toSide":"bottom","toEnd":"none","color":"#2980B9"},
+		{"id":"ring_pb_sl","fromNode":"babel","fromSide":"top","toNode":"scriptlabs","toSide":"bottom","toEnd":"none","color":"#8E44AD"}
+	]
+}

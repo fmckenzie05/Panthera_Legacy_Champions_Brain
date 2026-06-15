@@ -55,7 +55,7 @@ Why does this update matter right now?
 
 - [[HOME]]
 - [[MEMORY]]
-- [[INTELLUSIA_GRAPH]]
+- [[ScriptLab8_I3]]
 
 ## Related notes
 

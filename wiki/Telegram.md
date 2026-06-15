@@ -4,17 +4,25 @@ tags:
   - connector
   - messaging
   - application
-entity: OpenClaw
+entity: ScriptLabs Studios
+updated: 2026-06-04
 ---
 # Telegram
 
-Application connector linked from [[OpenClaw]].
+Mobile-first notification connector for **ScriptLabs Studios**.
 
-## Description
+## Role
 
-This note represents Telegram as a messaging/application surface connected to [[OpenClaw]].
-It is part of the communications connector map in the vault.
+- Founder-level alerts and real-time status updates from [[ScripLabStudio8]] automation
+- Mobile-first notification surface for Fernando (CIO) on the go
+- Operational trigger point for agentic pipeline status
 
-## Why it matters
+## Typical workflows
 
-It keeps the automation graph tied to concrete external channels.
+- Pipeline job completions / failures
+- New GHL lead notifications
+- Hermes health alerts from [[Hostinger VPS]]
+
+## Connection notes
+
+- Bot credentials kept outside vault in secret store referenced by [[ScripLabStudio8]]
